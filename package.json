@@ -2,7 +2,7 @@
   "name": "pizza-and-pasta-monorepo",
   "private": true,
   "scripts": {
-    "build": "npm --prefix frontend install && npm --prefix frontend run build && node -e \"const fs=require('fs'); const path=require('path'); const src=path.join('frontend','dist'); const dest=path.join('server','frontend','dist'); fs.rmSync(dest,{recursive:true,force:true}); fs.mkdirSync(dest,{recursive:true}); (function copy(s,d){ for(const e of fs.readdirSync(s,{withFileTypes:true})){ const sp=path.join(s,e.name); const dp=path.join(d,e.name); if(e.isDirectory()){ fs.mkdirSync(dp,{recursive:true}); copy(sp,dp);} else { fs.copyFileSync(sp,dp);} } })(src,dest); console.log('Copied frontend/dist -> server/frontend/dist');\" && npm --prefix server install",
+  "build": "npm --prefix frontend install --include=dev && npm --prefix frontend run build && node -e \"const fs=require('fs'); const path=require('path'); const src=path.join('frontend','dist'); const dest=path.join('server','frontend','dist'); fs.rmSync(dest,{recursive:true,force:true}); fs.mkdirSync(dest,{recursive:true}); (function copy(s,d){ for(const e of fs.readdirSync(s,{withFileTypes:true})){ const sp=path.join(s,e.name); const dp=path.join(d,e.name); if(e.isDirectory()){ fs.mkdirSync(dp,{recursive:true}); copy(sp,dp);} else { fs.copyFileSync(sp,dp);} } })(src,dest); console.log('Copied frontend/dist -> server/frontend/dist');\" && npm --prefix server install",
     "start": "npm --prefix server start"
   }
 }
