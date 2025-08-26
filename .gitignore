@@ -1,0 +1,52 @@
+# Monorepo .gitignore (frontend + server)
+
+# Dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build / Output
+dist/
+build/
+.cache/
+.parcel-cache/
+.output/
+.next/
+.tmp/
+tmp/
+temp/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment files (do not commit secrets)
+.env
+.env.*
+!*.example
+# Explicit paths just in case
+server/.env
+frontend/.env
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.iml
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc caches
+.eslintcache
+.turbo/
+.vercel/
+.netlify/

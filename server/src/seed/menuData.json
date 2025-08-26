@@ -1,0 +1,217 @@
+{
+  "pizzas": [
+    {
+      "id": "p_cheese",
+      "name": "Cheese",
+      "description": "Seasoned tomato sauce and generous premium melting cheese on our signature crust.",
+      "price": 495,
+      "image": "/assets/graphics/pizza/pizza - cheese.jpg"
+    },
+    {
+      "id": "p_veggie",
+      "name": "Veggie",
+      "description": "Seasoned tomato sauce topped with cheese, onions, mushrooms, green peppers and ripe tomatoes.",
+      "price": 495,
+      "image": "/assets/graphics/pizza/pizza - veggie.jpg"
+    },
+    {
+      "id": "p_margherita",
+      "name": "Margherita",
+      "description": "Fresh house mozzarella, tomato sauce and fresh basil.",
+      "price": 505,
+      "image": "/assets/graphics/pizza/pizza - margherita.jpg"
+    },
+    {
+      "id": "p_chicken_pesto",
+      "name": "Chicken Pesto",
+      "description": "House-made basil pesto with tender chicken breast and melted mozzarella.",
+      "price": 535,
+      "image": "/assets/graphics/pizza/pizza - pesto chicken.jpg"
+    },
+    {
+      "id": "p_hawaiian",
+      "name": "Hawaiian",
+      "description": "Pineapple and ham over seasoned tomato sauce and mozzarella.",
+      "price": 505,
+      "image": "/assets/graphics/pizza/pizza - hawaiian.jpg"
+    },
+    {
+      "id": "p_ricotta_sausage",
+      "name": "Ricotta Sausage",
+      "description": "House-made ricotta, Italian sausage and sweet onions with tomato sauce and mozzarella.",
+      "price": 535,
+      "image": "/assets/graphics/pizza/pizza - ricotta sausage.jpg"
+    },
+    {
+      "id": "p_pepperoni",
+      "name": "Pepperoni",
+      "description": "Loaded with premium pepperoni slices over tomato sauce and mozzarella.",
+      "price": 495,
+      "image": "/assets/graphics/pizza/pizza - pepperoni.jpg"
+    },
+    {
+      "id": "p_meat_lovers",
+      "name": "Meat Lovers",
+      "description": "Pepperoni, Italian sausage and ham over rich tomato sauce and melted mozzarella.",
+      "price": 505,
+      "image": "/assets/graphics/pizza/pizza - meat lovers.jpg"
+    },
+    {
+      "id": "p_seafood",
+      "name": "Seafood",
+      "description": "Shrimp, squid and crab over our tomato sauce topped with mozzarella.",
+      "price": 535,
+      "image": "/assets/graphics/pizza/pizza - seafood.jpg"
+    },
+    {
+      "id": "p_truffle",
+      "name": "Truffle",
+      "description": "Champignon mushrooms and black truffles with extra virgin olive oil.",
+      "price": 535,
+      "image": "/assets/graphics/pizza/pizza - truffle.jpg"
+    },
+    {
+      "id": "p_super_sampler",
+      "name": "Super Sampler",
+      "description": "Choose any 4 toppings on a single pizza. (Available for XL size only)",
+      "price": 550,
+      "image": "/assets/graphics/pizza/pizza - cheese.jpg"
+    }
+  ],
+  "pastas": [
+    {
+      "id": "pa_beef_stroganoff",
+      "name": "Beef Stroganoff",
+      "description": "Tender slices of steak in a creamy mushroom and brandy sauce.",
+      "price": 239,
+      "image": "/assets/graphics/pasta/pasta - beef stroganoff cropped.jpg"
+    },
+    {
+      "id": "pa_chicken_parmigiana",
+      "name": "Chicken Parmigiana",
+      "description": "Hand-breaded chicken topped with melted mozzarella and served with pasta of your choice.",
+      "price": 239,
+      "image": "/assets/graphics/pasta/pasta - spag - chx parmesan cropped.jpg"
+    },
+    {
+      "id": "pa_lasagna",
+      "name": "Pork Bolognese 5 Layer Lasagna",
+      "description": "Five layers of pasta with rich pork bolognese, basil oil and melted cheese.",
+      "price": 235,
+      "image": "/assets/graphics/pasta/pasta - lasagna - cropped.jpg"
+    },
+    {
+      "id": "pa_bacon_garlic_chili",
+      "name": "Bacon Garlic & Chili",
+      "description": "A bold and spicy Thai favorite made with crispy bacon, garlic, dried chilies, and fragrant Thai herbs. Best enjoyed with our fresh handmade pasta.",
+      "price": 115,
+      "image": "/assets/graphics/pasta/pasta - spag - bacon garlic cropped.jpg"
+    },
+    {
+      "id": "pa_drunken_noodles",
+      "name": "Drunken Noodles",
+      "description": "A bold, spicy Thai street food classic stir-fried with garlic, chilies, Thai basil, and fresh vegetables. Paired with our fresh handmade pasta.",
+      "price": 115,
+      "image": "/assets/graphics/pasta/pasta - spag - kee mao cropped.jpg"
+    },
+    {
+      "id": "pa_pork_bolognese",
+      "name": "Pork Bolognese",
+      "description": "Rich pork bolognese slow-cooked for deep flavor.",
+      "price": 145,
+      "image": "/assets/graphics/pasta/pasta - spag - bolognese cropped.jpg"
+    },
+    {
+      "id": "pa_carbonara",
+      "name": "Creamy Carbonara",
+      "description": "Crispy bacon, garlic, parmesan and high-quality cream for a velvety finish.",
+      "price": 145,
+      "image": "/assets/graphics/pasta/pasta - spag - carbonara cropped.jpg"
+    },
+    {
+      "id": "pa_pesto",
+      "name": "Pesto Pasta",
+      "description": "Fresh basil pesto with garlic, parmesan and extra virgin olive oil.",
+      "price": 145,
+      "image": "/assets/graphics/pasta/pasta - spag - pesto cropped.jpg"
+    },
+    {
+      "id": "pa_marinara",
+      "name": "Marinara",
+      "description": "A rustic take on Italy’s beloved base tomato sauce, slow-simmered with garlic, onions, and herbs for a simple, bold flavor.",
+      "price": 115,
+      "image": "/assets/graphics/pasta/pasta - spag - marinara cropped.jpg"
+    },
+    {
+      "id": "pa_rose",
+      "name": "Rose’",
+      "description": "Tangy rustic marinara elevated with high-quality cream for a smooth, sumptuous sauce with a hint of natural sweetness.",
+      "price": 135,
+      "image": "/assets/graphics/pasta/pasta - spag - rose cropped.jpg"
+    }
+  ],
+  "appetizers": [
+    {
+      "id": "a_bruschetta",
+      "name": "Bruschetta",
+      "description": "Toasted bread topped with juicy diced tomatoes, garlic and house-made pesto.",
+      "price": 99,
+      "image": "/assets/graphics/appetizers/app - bruschetta cropped.jpg"
+    },
+    {
+      "id": "a_shrimp_scampi",
+      "name": "Shrimp Scampi",
+      "description": "Tender shrimp sautéed in butter, garlic, olive oil and basil.",
+      "price": 159,
+      "image": "/assets/graphics/appetizers/app - scampi - cropped.jpg"
+    }
+  ],
+  "desserts": [
+    {
+      "id": "d_carrot_cake",
+      "name": "Carrot Cake",
+      "description": "House-made carrot cake with cream cheese icing.",
+      "price": 109,
+      "image": "/assets/graphics/dessert/dessert - carrot cake - cropped.jpg"
+    }
+  ],
+  "soups": [
+    {
+      "id": "s_creamy_bacon_potato",
+      "name": "Creamy Bacon Potato Soup",
+      "description": "Rich and velvety potato soup with crispy bacon and cheddar.",
+      "price": 139,
+      "image": "/assets/graphics/appetizers/app - potato soup cropped.jpg"
+    },
+    {
+      "id": "s_shrimp_bisque",
+      "name": "Shrimp Bisque",
+      "description": "Creamy shrimp bisque simmered with herbs and a touch of white wine.",
+      "price": 139,
+      "image": "/assets/graphics/appetizers/app - scampi - cropped.jpg"
+    }
+  ],
+  "salads": [
+    {
+      "id": "a_caesar_salad",
+      "name": "Caesar Salad",
+      "description": "Crisp romaine tossed in house-made Caesar dressing with croutons and parmesan.",
+      "price": 159,
+      "image": "/assets/graphics/appetizers/app - salad - caesar - cropped.jpg"
+    },
+    {
+      "id": "sal_thousand_island",
+      "name": "Thousand Island Salad",
+      "description": "Crisp lettuce, juicy tomatoes and seasonal veggies with house-made dressing.",
+      "price": 159,
+      "image": "/assets/graphics/appetizers/app - salad - italian - cropped.jpg"
+    },
+    {
+      "id": "sal_italian_salad",
+      "name": "Italian Salad",
+      "description": "Fresh mixed salad with zesty Italian dressing.",
+      "price": 159,
+      "image": "/assets/graphics/appetizers/app - salad - 1000 - cropped.jpg"
+    }
+  ]
+}

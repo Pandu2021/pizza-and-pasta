@@ -1,0 +1,26 @@
+# Server-specific .gitignore
+
+# Node modules
+node_modules/
+
+# Env
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime files
+pids/
+*.pid
+*.seed
+
+# Coverage and build
+coverage/
+build/
+
+# Keys
+*.pem
+*.key
+*.crt

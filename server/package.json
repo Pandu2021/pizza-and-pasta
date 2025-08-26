@@ -1,0 +1,27 @@
+{
+  "name": "epic-pizza-server",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+  "seed": "node src/seed/seedMenu.js",
+  "sync-indexes": "node -e \"require('dotenv').config(); try{const dns=require('dns'); dns.setServers(['1.1.1.1','8.8.8.8']);}catch{} const mongoose=require('mongoose'); const MenuItem=require('./src/models/MenuItem'); const Order=require('./src/models/Order'); const User=require('./src/models/User'); (async()=>{for(let i=0;i<3;i++){try{await mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true,useUnifiedTopology:true}); break;}catch(e){if(i===2) throw e; await new Promise(r=>setTimeout(r,1000*(i+1)));}} await MenuItem.syncIndexes(); await Order.syncIndexes(); await User.syncIndexes(); console.log('Indexes synced'); process.exit(0)})().catch(e=>{console.error(e); process.exit(1)});\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^6.14.3",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

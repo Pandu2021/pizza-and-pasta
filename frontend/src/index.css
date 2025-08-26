@@ -1,0 +1,21 @@
+/* ========================================================================
+// FILE: src/index.css (REVISED)
+// ========================================================================
+/* The @import for Google Fonts was moved to App.jsx to be loaded dynamically */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  @apply bg-gray-50 text-gray-800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Add-to-cart utility class for explicit Add to Cart buttons */
+.add-to-cart {
+  @apply bg-red-700 text-white hover:bg-red-800 focus:ring-red-500;
+}
