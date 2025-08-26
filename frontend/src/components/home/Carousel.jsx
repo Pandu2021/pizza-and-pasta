@@ -4,20 +4,24 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+// Local images (use assets so CSP won't block external domains)
+import pizzaImg from '../../assets/graphics/pizza/pizza - margherita.jpg';
+import pastaImg from '../../assets/graphics/pasta/pasta - spag - chx parmesan cropped.jpg';
+import dessertImg from '../../assets/graphics/dessert/dessert - carrot cake - cropped.jpg';
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop',
+    image: pizzaImg,
     title: 'Reach Out Today',
     text: 'Connect with us to discover how fresh, handcrafted ingredients transform a meal into an experience. Let our family bring a slice of Italy to your table with our unparalleled service and authentic cuisine',
   },
   {
-    image: 'https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?q=80&w=2070&auto=format&fit=crop',
+    image: pastaImg,
     title: 'Savor Authentic Italy',
     text: 'Experience the extraordinary fusion of traditional Italian cuisine and contemporary flair with our vibrant homemade pizzas and pastas. Indge in culinary craftsmanship, savoring each of our uniquely textured, flavorful creations',
   },
   {
-    image: 'https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=1972&auto=format&fit=crop',
+    image: dessertImg,
     title: 'Fresh Ingredients, Passionate Cooking',
     text: 'Our commitment to quality starts with the finest ingredients, handled with care by our passionate chefs to bring you an unforgettable dining experience.',
   }

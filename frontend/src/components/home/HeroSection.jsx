@@ -4,10 +4,11 @@
 import React from 'react';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
+import heroImg from '../../assets/graphics/pizza/pizza - margherita.jpg';
 
 const HeroSection = () => {
   return (
-    <div className="relative h-[60vh] md:h-[80vh] bg-cover bg-center text-white" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop')" }}>
+    <div className="relative h-[60vh] md:h-[80vh] bg-cover bg-center text-white" style={{ backgroundImage: `url(${heroImg})` }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
