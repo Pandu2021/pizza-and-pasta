@@ -4,7 +4,7 @@
 import React from 'react';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
-import heroImg from '../../assets/graphics/pizza/pizza - margherita.jpg';
+import heroImg from '../../assets/graphics/pizza/pasta - beef stroganoff cropped.jpg';
 
 const HeroSection = () => {
   return (
