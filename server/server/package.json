@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "epic-pizza-server": "file:.."
+  }
+}

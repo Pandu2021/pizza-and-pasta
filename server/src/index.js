@@ -23,8 +23,10 @@ const app = express();
 // Security middlewares
 app.use(helmet());
 app.use(express.json());
-// Allow local frontend during development
-const corsOptions = { origin: process.env.FRONTEND_ORIGIN || 'http://localhost:5173' };
+// CORS: allow specific origin if provided, otherwise allow same-origin (true)
+const corsOptions = {
+  origin: process.env.FRONTEND_ORIGIN ? process.env.FRONTEND_ORIGIN : true,
+};
 app.use(cors(corsOptions));
 if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
@@ -41,6 +43,22 @@ app.use('/api/profile', profileRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/checkout', checkoutRouter);
+
+// If a built frontend exists, serve it as static (useful for single-service deploys)
+try {
+  const fs = require('fs');
+  const frontendDist = path.join(__dirname, '../frontend/dist');
+  if (fs.existsSync(frontendDist)) {
+    app.use(express.static(frontendDist));
+    // Serve index.html for any non-API route (client-side routing)
+    app.get(/^(?!\/api).*/, (req, res) => {
+      res.sendFile(path.join(frontendDist, 'index.html'));
+    });
+    console.log('Serving frontend from', frontendDist);
+  }
+} catch (e) {
+  // ignore; not critical
+}
 
 // Health
 app.get('/api/health', (req, res) => res.json({ ok: true }));

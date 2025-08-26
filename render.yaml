@@ -1,0 +1,18 @@
+# Render.yaml to deploy frontend as a Static Site and server as a Web Service
+# See https://render.com/docs/deploy-anything for details
+
+services:
+  - type: web
+    name: pizza-and-pasta
+    env: node
+    plan: starter
+    region: oregon
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm --prefix server start"
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: NODE_ENV
+        value: production

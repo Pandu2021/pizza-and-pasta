@@ -22,6 +22,9 @@ build/
 tmp/
 temp/
 
+# Ignore embedded frontend build inside server for single-service deploy
+server/frontend/dist/
+
 # Testing
 coverage/
 .nyc_output/
