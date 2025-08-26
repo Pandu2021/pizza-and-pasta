@@ -62,6 +62,7 @@ try {
 
 // Health
 app.get('/api/health', (req, res) => res.json({ ok: true }));
+app.get('/healthz', (req, res) => res.status(200).json({ status: 'ok' }));
 
 const PORT = process.env.PORT || 4000;
 

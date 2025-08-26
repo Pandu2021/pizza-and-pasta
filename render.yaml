@@ -1,6 +1,4 @@
-# Render.yaml to deploy frontend as a Static Site and server as a Web Service
-# See https://render.com/docs/deploy-anything for details
-
+# Render.yaml to deploy frontend + server as one Web Service
 services:
   - type: web
     name: pizza-and-pasta
@@ -9,6 +7,7 @@ services:
     region: oregon
     buildCommand: "npm install && npm run build"
     startCommand: "npm --prefix server start"
+    healthCheckPath: "/healthz"
     envVars:
       - key: MONGO_URI
         sync: false
