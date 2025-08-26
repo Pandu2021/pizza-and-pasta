@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 // Local images (use assets so CSP won't block external domains)
 import pizzaImg from '../../assets/graphics/pizza/pizza - veggie.jpg';
 import pastaImg from '../../assets/graphics/pasta/pasta - spag - carbonara cropped.jpg';
-import dessertImg from '../../assets/graphics/salad/app - salad - 1000 - cropped.jpg';
+import dessertImg from '../../assets/graphics/appetizers/app - salad - 1000 - cropped.jpg';
 
 const slides = [
   {
