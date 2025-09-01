@@ -17,3 +17,4 @@ Steps:
 Notes:
 - The server will try to serve the frontend if `server/frontend/dist` exists — useful for single-service deploys.
 - Keep real secrets out of the repo; use Render environment variables or a secrets manager.
+- See [SECURITY.md](./SECURITY.md) for security guidelines and audit information.
